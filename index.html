@@ -5,18 +5,38 @@
 	<title>Banking Form</title>
 </head>
 <body>
-	<h1>Please provide your information</h1>
-	<h2>So we can see if we can trust you with our money</h2>
-<article class="basicDemo">
-	<input type=" name="firstname" placeholder="First name.">
-	<input type="text" name="middleinitial" placeholder="Middle initial">
-	<input type="text" name="lastname" placeholder="Last name">
-</article>
-<article class="addyAndJob">
-	<input type="text" name="address" placeholder="Address">
-	<input type="text" name="occupation" placeholder="Occupation">
-	<input type="text" name="employer" placeholder="Employer Name">
-	<input type="text" name="empladdress" placeholder="Employer Address">
-</article>
+	<form>
+		<h1>Please provide your information</h1>
+		<h2>So we can see if we can trust you with our money</h2>
+	<article class="basicDemo">
+		<input type=" name="firstname" placeholder="First name.">
+		<input type="text" name="middleinitial" placeholder="Middle initial">
+		<input type="text" name="lastname" placeholder="Last name">
+	</article>
+	<article class="addyAndJob">
+		<input type="text" name="address" placeholder="Address">
+		<input type="text" name="occupation" placeholder="Occupation">
+		<input type="text" name="employer" placeholder="Employer Name">
+		<input type="text" name="empladdress" placeholder="Employer Address">
+	</article>
+	<article class="typeOfLoan">
+		<p>Type of loan:</p>
+		<select name="loanType">
+			<option value="Commercial">Commercial</option>
+			<option value="Real estate">Real estate</option>
+			<option value="Personal">Personal</option>
+			<option value="Mortgage">Mortgage</option>
+		</select>
+		<p>Requested Loan Amount</p>
+		<input type="number" name="loanAmount" placeholder="$">
+		<p>Select Loan Length</p>
+		<input type="radio" name="loan-length" value="5 years" checked="checked">5 years
+		<input type="radio" name="loan-length" value="15 years" checked="checked">15 years
+		<input type="radio" name="loan-length" value="30 years" checked="checked">30 years
+	</article>
+	<article>
+		
+	</article>
+</form>
 </body>
 </html>
