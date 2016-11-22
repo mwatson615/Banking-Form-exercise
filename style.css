@@ -1,5 +1,8 @@
+/*Page-wide*/
+
 body {
 	background-color: slategrey;
+	display: flex;
 }
 
 h1 {
@@ -10,17 +13,41 @@ h2 {
 	text-align: center;
 }
 
+/*Classes*/
+
+.container {
+	flex-direction: column;
+}
+
 .basicDemo {
 	text-align: center;
 	margin: 2% 0 5% 0;
 }
 
-.addyAndJob {
+.addressAndOccupation {
 	text-align: center;
 	justify-content: space-between;
 	margin: 25px;
 }
 
+.job {
+	text-align: center;
+}
+
 .typeOfLoan {
 	text-align: center;
 }
+
+.specialConditions {
+	text-align: center;
+	margin-top: 35px;
+}
+
+.comments {
+	text-align: center;
+}
+
+.contact {
+	text-align: center;
+}
+

@@ -2,23 +2,38 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Banking Form</title>
+	<title>Banking Form Exercise</title>
 </head>
 <body>
 	<form>
 		<h1>Please provide your information</h1>
 		<h2>So we can see if we can trust you with our money</h2>
+		<!--Applicant first name
+		Applicant middle initial
+		Applicant last name-->
 	<article class="basicDemo">
+		<div class="container"></div>
 		<input type=" name="firstname" placeholder="First name">
 		<input type="text" name="middleinitial" placeholder="Middle initial">
 		<input type="text" name="lastname" placeholder="Last name">
 	</article>
-	<article class="addyAndJob">
+	<!-- Applicant address
+		Applicant occupation
+		Applicant employer
+		Employer address -->
+	<article class="addressAndOccupation">
 		<input type="text" name="address" placeholder="Address">
 		<input type="text" name="occupation" placeholder="Occupation">
+	</article>
+	<article class="job">
 		<input type="text" name="employer" placeholder="Employer Name">
 		<input type="text" name="empladdress" placeholder="Employer Address">
 	</article>
+	<!-- Type of loan select element with these options:
+		Commercial
+		Real estate
+		Personal
+		Mortgage -->
 	<article class="typeOfLoan">
 		<p>Type of loan:</p>
 		<select name="loanType">
@@ -27,15 +42,48 @@
 			<option value="Personal">Personal</option>
 			<option value="Mortgage">Mortgage</option>
 		</select>
+		<!--Requested amount of loan-->
 		<p>Requested Loan Amount</p>
 		<input type="number" name="loanAmount" placeholder="$">
+		<!--Radio button elements for loan length
+			5 years
+			15 years
+			30 years-->
 		<p>Select Loan Length</p>
 		<input type="radio" name="loan-length" value="5 years" checked="checked">5 years
 		<input type="radio" name="loan-length" value="15 years" checked="checked">15 years
 		<input type="radio" name="loan-length" value="30 years" checked="checked">30 years
 	</article>
+	<!-- Checkbox group for special conditions
+		I have a down payment
+		Out-of-state resident
+		Married
+		Loan will be co-signed -->
+	<article class="specialConditions">
+		<p>Please select all that apply</p>
+		<input type="checkbox" name="specialConditions" value="I have a down payment">I have a down payment
+		<input type="checkbox" name="specialConditions" value="Out-of-state-resident">Out-of-state resident
+		<input type="checkbox" name="specialConditions" value="Married">Married
+		<input type="checkbox" name="specialConditions" value="Loan will be co-signed">Loan will be co-signed
+	</article>
+	<!--A text area to allow for additional comments-->
+	<article class="comments">
+		<p>Comments</p>
+		<textarea name="comments"></textarea> 
+	</article>
+	<!-- Applicant email address
+		Applicant telephone number
+		Applicant LinkedIn URL -->
+	<article class="contact">
+		<p>Email</p>
+		<input type="email" name="mail">
+		<p>Phone Number</p>
+		<input type="tel" name="phone">
+		<p>LinkedIn URL</p>
+		<input type="URL" name="linkedInUrl">
+	</article>
 	<article>
-		
+		<input type="submit" name="submit">
 	</article>
 </form>
 </body>
