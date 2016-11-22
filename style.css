@@ -1,0 +1,26 @@
+body {
+	background-color: slategrey;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+.basicDemo {
+	text-align: center;
+	margin: 2% 0 5% 0;
+}
+
+.addyAndJob {
+	text-align: center;
+	justify-content: space-between;
+	margin: 25px;
+}
+
+.typeOfLoan {
+	text-align: center;
+}
